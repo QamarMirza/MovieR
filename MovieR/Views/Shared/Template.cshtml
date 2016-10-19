@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/bootstrap")
+        @Scripts.Render("~/bundles/jquery")
+
+
+    <title>Template</title>
+</head>
+<body>
+<div class="row">
+	<div id="Home" class="col-md-12" >
+    	<a href="@Url.Action("Index", "Home")" class="btn btn-primary btn-large btn-block">
+				<span class="glyphicon glyphicon-circle-arrow-up"></span> 
+					Home
+		</a>
+	</div>
+
+</div>			
+<div class="row">
+	<div id="FirstRow" class="col-md-12" >
+    	<a href="@Url.Action("Submit", "Movie")" class="btn btn-primary btn-large btn-block">
+				<span class="glyphicon glyphicon-circle-arrow-up"></span> 
+					Submit Movie
+		</a>
+	</div>
+
+</div>
+<div class="row">
+		<div id="SecondRow" class="col-md-6">
+        	<a href="@Url.Action("Search", "Movie")" class="btn btn-primary btn-large btn-block">
+				<div class="glyphicon glyphicon-circle-arrow-up"></div> 
+					Seach Movie
+				</a>
+		</div>
+     		<div id="SecondRow" class="col-md-6">
+			<a href="#" class="btn btn-primary btn-large btn-block"><div class="glyphicon glyphicon-question-sign"></div>Delete Movie</a>
+		</div>
+</div>
+		
+<div class="row">
+	<div id="thirdrow" class="col-md-12">
+      	  <a href="@Url.Action("ListAll", "Movie")"  class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-question-sign"></span>List All</a>
+
+	</div>
+</div>
+
+<div class="row">   
+	<div id="fourthrow" class="col-md-12">
+		<a href="@Url.Action("DeleteAll", "Movie")" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-question-sign"></span>Delete All</a>
+
+	</div>
+			</div>
+			<br/>
+
+
+		
+        @RenderBody()
+
+</body>
+</html>
+

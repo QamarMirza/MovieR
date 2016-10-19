@@ -1,0 +1,39 @@
+﻿@model MovieR.Model.Movie
+
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/Template.cshtml";
+}
+
+<script>
+    (function () {
+
+	$(init);
+
+	function init() {
+	$("#searchbutton").click(search);
+
+	function search(){
+
+		$.ajax({
+            	url:  "@Url.Action("Search", "Movie")" + "?moviename=" + $("#searchbar").val(),
+                                             
+            	type: 'POST',
+				datatype: 'document',
+
+				success: function(response) { console.log(response);}
+        });
+    }
+	function render(e){
+		alert(e);
+	}
+	}})();
+</script>
+
+
+<h2>Search</h2>
+
+
+<input id="searchbar" type="text" class="form-control" />
+<button id="searchbutton" > Search </button>
+

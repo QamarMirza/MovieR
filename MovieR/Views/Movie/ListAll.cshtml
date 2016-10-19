@@ -1,0 +1,77 @@
+﻿@using MovieR.Model;
+@model IEnumerable <Movie>
+@{
+    Layout = "~/Views/Shared/Template.cshtml";
+}
+
+<style>
+#movietable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#movietable td, #movietable thead {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#movietable tr:nth-child(even){background-color: #f2f2f2;}
+
+#movietable tr:hover {background-color: #ddd;}
+
+#movietable thead {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: blue;
+    color: white;
+}
+
+	#editcolumn {
+	boarder:none;
+	}
+</style>
+
+<br />
+<div>
+	<table id="movietable">
+		<thead>
+			<tr>
+				<td id="editcolumn" ></td>
+
+				<td>Movie Id</td>
+				<td> Name </td>
+				<td> Rating</td>
+				<td> Cover </td>
+			</tr>
+		</thead>
+		<tbody>
+		@foreach(Movie mo in @Model){
+			<tr>
+				<td style="width:25px" >
+					<a href="@Url.Action("Edit", "Movie", new {m =@mo.MovieId})" >
+						<img style="float:right;" src="https://image.freepik.com/free-icon/edit-interface-symbol_318-61460.png" alt="" border=3 height=20 width=20 /> 	
+					</a> 
+				</td>
+
+				<td>
+					<a href="@Url.Action("Details", "Movie", new {id =@mo.MovieId})" >
+					@mo.MovieId
+					</a>
+
+				</td>
+				<td>@mo.Name</td>		
+				<td>@mo.Rating</td>
+				<td>
+					@{ 
+						if(@mo.imgURL != null ){ 		
+				 			<img src="@mo.imgURL" alt="@mo.Name" border=3 height=100 width=100 /> 	
+						}
+					}
+				</td>	
+			</tr>
+		 } 
+		</tbody>
+	</table>
+</div>
