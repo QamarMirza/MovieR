@@ -1,29 +1,20 @@
 ﻿<Properties StartupItem="MovieR/MovieR.csproj">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MovieR/Controllers/MovieController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovieR/Views/Movie/Search.cshtml">
     <Files>
-      <File FileName="MovieR/Controllers/MovieController.cs" Line="80" Column="23" />
-      <File FileName="MovieR/Views/_ViewStart.cshtml" Line="2" Column="45" />
-      <File FileName="MovieR/Views/Shared/Template.cshtml" Line="36" Column="7" />
-      <File FileName="MovieR/Views/Shared/_Layout.cshtml" Line="12" Column="1" />
-      <File FileName="MovieR/Views/Shared/Error.cshtml" Line="1" Column="1" />
-      <File FileName="MovieR/App_Start/BundleConfig.cs" Line="37" Column="3" />
-      <File FileName="MovieR/Views/Home/Index.cshtml" Line="1" Column="22" />
-      <File FileName="MovieR/Views/Home/Qamar.cshtml" Line="1" Column="1" />
-      <File FileName="MovieR/Controllers/HomeController.cs" Line="18" Column="32" />
-      <File FileName="MovieR/DataAccessLayer/MovieContext.cs" Line="8" Column="15" />
-      <File FileName="MovieR/Views/Movie/ListAll.cshtml" Line="53" Column="63" />
-      <File FileName="MovieR/Models/Movie.cs" Line="16" Column="20" />
-      <File FileName="MovieR/Views/Movie/Index.cshtml" Line="16" Column="1" />
-      <File FileName="MovieR/Views/Movie/Submit.cshtml" Line="28" Column="1" />
-      <File FileName="MovieR/Views/Movie/Edit.cshtml" Line="10" Column="16" />
-      <File FileName="MovieR/Views/Movie/Details.cshtml" Line="11" Column="16" />
+      <File FileName="MovieR/Controllers/MovieController.cs" Line="135" Column="1" />
+      <File FileName="MovieR/Scripts/importMovie.js" Line="12" Column="1" />
+      <File FileName="MovieR/Models/Movie.cs" Line="9" Column="22" />
+      <File FileName="MovieR/Controllers/HomeController.cs" Line="26" Column="27" />
+      <File FileName="MovieR/Controllers/CommentsController.cs" Line="19" Column="30" />
+      <File FileName="MovieR/Web.config" Line="1" Column="1" />
+      <File FileName="MovieR/Global.asax.cs" Line="1" Column="1" />
+      <File FileName="MovieR/Views/Movie/Search.cshtml" Line="22" Column="24" />
+      <File FileName="MovieR/Views/Shared/Submit.cshtml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/QamarMirza/Projects/MovieR/MovieR/Controllers/MovieController.cs" line="81" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.MovieR PreferredExecutionTarget="MonoDevelop.Default" />
